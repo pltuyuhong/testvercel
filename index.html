@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google 仿制首页</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      min-height: 100vh;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .logo {
+      font-size: 92px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      margin-bottom: 40px;
+      font-family: 'Product Sans', Arial, sans-serif;
+    }
+    .logo .blue { color: #4285f4; }
+    .logo .red { color: #ea4335; }
+    .logo .yellow { color: #fbbc05; }
+    .logo .green { color: #34a853; }
+    .search-box {
+      display: flex;
+      align-items: center;
+      width: 560px;
+      background: #fff;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      box-shadow: 0 2px 5px rgba(60,64,67,.07);
+      padding: 0 16px;
+      height: 48px;
+      margin-bottom: 30px;
+    }
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      background: transparent;
+      padding: 0 8px;
+    }
+    .search-icon {
+      color: #9aa0a6;
+      font-size: 20px;
+      margin-right: 8px;
+    }
+    .search-actions {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    .search-actions button {
+      background: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      padding: 10px 24px;
+      font-size: 16px;
+      color: #3c4043;
+      cursor: pointer;
+      transition: border 0.2s;
+    }
+    .search-actions button:hover {
+      border: 1px solid #dadce0;
+    }
+    .footer {
+      margin-top: 24px;
+      color: #5f6368;
+      font-size: 14px;
+      text-align: center;
+    }
+    .footer a {
+      color: #1a0dab;
+      text-decoration: none;
+      margin-left: 4px;
+    }
+    @media (max-width: 600px) {
+      .search-box {
+        width: 90vw;
+      }
+      .logo {
+        font-size: 48px;
+      }
+    }
+  </style>
+  <!-- Google 字体 Product Sans 仅供演示，实际需授权，这里用 Arial 替代 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans:400,700&display=swap">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+    </div>
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="搜索或输入网址" />
+      <span class="search-icon">🎤</span>
+      <span class="search-icon">📷</span>
+    </div>
+    <div class="search-actions">
+      <button>Google 搜索</button>
+      <button>手气不错</button>
+    </div>
+    <div class="footer">
+      Google 提供：<a href="#">日本語</a>
+    </div>
+  </div>
+</body>
+</html>
+
